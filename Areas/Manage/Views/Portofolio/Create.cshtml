@@ -1,0 +1,31 @@
+﻿@model Portofolio
+<div class="'container'">
+
+
+
+    <form method="post" enctype="multipart/form-data">
+  <div class="row">
+
+      <div class="mb-3 col-md-4">
+    <label asp-for="Name" class="form-label">Email address</label>
+    <input  class="form-control" asp-for="Name">
+    <span asp-validation-for="Name" style="color:red"></span>
+  </div>
+    <div class="mb-3 col-md-4">
+    <label asp-for="WebPosition" class="form-label">WebPosition</label>
+    <input  class="form-control" asp-for="WebPosition">
+    <span asp-validation-for="WebPosition" style="color:red"></span>
+  </div>
+    <div class="mb-3 col-md-4">
+    <label asp-for="ImgFile" class="form-label">ImgFile</label>
+    <input  class="form-control" asp-for="ImgFile">
+    <span asp-validation-for="ImgFile" style="color:red"></span>
+  </div>
+
+  </div>
+ 
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+</div>
